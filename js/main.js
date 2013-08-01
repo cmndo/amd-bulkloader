@@ -1,14 +1,15 @@
-curl({
-	paths: {
-		'loader': 'js/bulkloader'
-	}
-}, ['loader'], function(BulkLoader){
+curl(['js/bulkloader'], function(BulkLoader){
 
 	//bulkloader example
 	var loadExample = new BulkLoader({
 		assets: ["images/300.jpg","images/400.jpg","images/600.jpg","images/900.jpg"],
 		onComplete: function(images){
 			console.log("images done");
+			
+			var example = document.getElementById("example");
+			for(var i = 0; i < images.length; i++){
+				example.appendChild(images[i]);
+			}
 		},
 		onProgress: function(options){
 			//an image is finished
