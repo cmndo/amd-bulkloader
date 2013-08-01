@@ -4,7 +4,7 @@ image-loader
 CurlJS Module for loading images and responding to their load events. Small footprint. Easy to use.
 
 Usage
-=====
+-----
 
 `curl(['js/bulkloader'], function(BulkLoader){
 
