@@ -6,7 +6,8 @@ CurlJS Module for loading images and responding to their load events. Small foot
 Usage
 -----
 
-`curl(['js/bulkloader'], function(BulkLoader){
+<pre><code>
+curl(['js/bulkloader'], function(BulkLoader){
 
   //bulkloader example
 	var loadExample = new BulkLoader({
@@ -29,5 +30,6 @@ Usage
 		}
 	});
 
-});`
+});
+</code></pre>
   
