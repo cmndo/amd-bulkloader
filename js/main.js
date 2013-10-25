@@ -2,7 +2,7 @@ curl(['js/bulkloader'], function(BulkLoader){
 
 	//bulkloader example
 	var loadExample = new BulkLoader({
-		assets: ["images/300.jpg","images/400.jpg","images/600.jpg","images/900.jpg"],
+		assets: ["images/300.jpg","images/400.jpg","images/600.jpg","images/900.jpg", "images/5300.jpg"],
 		onComplete: function(images){
 			console.log("images done");
 			
